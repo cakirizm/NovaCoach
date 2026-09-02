@@ -1,0 +1,34 @@
+name: NovaCoach
+options:
+  bundleIdPrefix: com.novacoach
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+targets:
+  NovaCoach:
+    type: application
+    platform: iOS
+    sources:
+      - path: NovaCoach
+        excludes:
+          - Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png
+    resources:
+      - path: NovaCoach/Resources
+    info:
+      path: NovaCoach/Info.plist
+      properties:
+        CFBundleDisplayName: NovaCoach
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.novacoach.app
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+    dependencies: []
