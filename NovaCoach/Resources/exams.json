@@ -1,1 +1,109 @@
-[{"id":"yks","name":"Yükseköğretim Kurumları Sınavı","shortName":"YKS","sessions":[{"id":"tyt","name":"TYT","subjects":[{"id":"tyt_turkce","name":"Türkçe","topics":[{"id":"tyt_tr_sozcuk","name":"Sözcükte Anlam","priority":5},{"id":"tyt_tr_cumle","name":"Cümlede Anlam","priority":5},{"id":"tyt_tr_paragraf","name":"Paragraf","priority":5},{"id":"tyt_tr_dilbilgisi","name":"Dil Bilgisi","priority":4},{"id":"tyt_tr_yazim","name":"Yazım Kuralları","priority":4},{"id":"tyt_tr_noktalama","name":"Noktalama İşaretleri","priority":4}]},{"id":"tyt_matematik","name":"Matematik","topics":[{"id":"tyt_mat_temel","name":"Temel Kavramlar","priority":5},{"id":"tyt_mat_sayilar","name":"Sayılar","priority":5},{"id":"tyt_mat_oran","name":"Oran-Orantı","priority":4},{"id":"tyt_mat_denklem","name":"Denklemler ve Eşitsizlikler","priority":5},{"id":"tyt_mat_problemler","name":"Problemler","priority":5},{"id":"tyt_mat_geometri","name":"Temel Geometri","priority":4}]},{"id":"tyt_sosyal","name":"Sosyal Bilimler","topics":[{"id":"tyt_sos_tarih","name":"Tarih Temelleri","priority":4},{"id":"tyt_sos_cog","name":"Coğrafya Temelleri","priority":4},{"id":"tyt_sos_felsefe","name":"Felsefe","priority":3}]},{"id":"tyt_fen","name":"Fen Bilimleri","topics":[{"id":"tyt_fen_fizik","name":"Fizik Temelleri","priority":4},{"id":"tyt_fen_kimya","name":"Kimya Temelleri","priority":4},{"id":"tyt_fen_biyoloji","name":"Biyoloji Temelleri","priority":4}]}]},{"id":"ayt","name":"AYT","subjects":[{"id":"ayt_matematik","name":"AYT Matematik","topics":[{"id":"ayt_mat_fonksiyon","name":"Fonksiyonlar","priority":5},{"id":"ayt_mat_trig","name":"Trigonometri","priority":5},{"id":"ayt_mat_limit","name":"Limit","priority":5},{"id":"ayt_mat_turev","name":"Türev","priority":5},{"id":"ayt_mat_integral","name":"İntegral","priority":5}]},{"id":"ayt_fen","name":"AYT Fen","topics":[{"id":"ayt_fizik","name":"Fizik","priority":5},{"id":"ayt_kimya","name":"Kimya","priority":5},{"id":"ayt_biyoloji","name":"Biyoloji","priority":5}]},{"id":"ayt_edebiyat","name":"Türk Dili ve Edebiyatı - Sosyal Bilimler","topics":[{"id":"ayt_edebiyat","name":"Türk Dili ve Edebiyatı","priority":5},{"id":"ayt_tarih1","name":"Tarih-1","priority":4},{"id":"ayt_cog1","name":"Coğrafya-1","priority":4}]}]}]},{"id":"kpss_lisans","name":"Kamu Personel Seçme Sınavı - Lisans","shortName":"KPSS Lisans","sessions":[{"id":"kpss_gygk","name":"Genel Yetenek - Genel Kültür","subjects":[{"id":"kpss_turkce","name":"Türkçe","topics":[{"id":"kpss_tr_sozcuk","name":"Sözcükte Anlam","priority":4},{"id":"kpss_tr_cumle","name":"Cümlede Anlam","priority":4},{"id":"kpss_tr_paragraf","name":"Paragraf","priority":5},{"id":"kpss_tr_dil","name":"Dil Bilgisi","priority":4},{"id":"kpss_tr_sozel","name":"Sözel Mantık","priority":5}]},{"id":"kpss_matematik","name":"Matematik","topics":[{"id":"kpss_mat_temel","name":"Temel Kavramlar","priority":5},{"id":"kpss_mat_sayilar","name":"Sayılar","priority":5},{"id":"kpss_mat_oran","name":"Oran-Orantı","priority":4},{"id":"kpss_mat_problemler","name":"Problemler","priority":5},{"id":"kpss_mat_geometri","name":"Geometri","priority":4}]},{"id":"kpss_tarih","name":"Tarih","topics":[{"id":"kpss_tar_islamiyet_oncesi","name":"İslamiyet Öncesi Türk Tarihi","priority":4},{"id":"kpss_tar_ilk_musluman","name":"İlk Türk-İslam Devletleri","priority":4},{"id":"kpss_tar_osmanli","name":"Osmanlı Tarihi","priority":5},{"id":"kpss_tar_inkilap","name":"Atatürk İlkeleri ve İnkılap Tarihi","priority":5},{"id":"kpss_tar_cagdas","name":"Çağdaş Türk ve Dünya Tarihi","priority":4}]},{"id":"kpss_cografya","name":"Coğrafya","topics":[{"id":"kpss_cog_konum","name":"Türkiye'nin Coğrafi Konumu","priority":5},{"id":"kpss_cog_yeryuzu","name":"Yer Şekilleri","priority":4},{"id":"kpss_cog_iklim","name":"İklim ve Bitki Örtüsü","priority":4},{"id":"kpss_cog_nufus","name":"Nüfus ve Yerleşme","priority":4},{"id":"kpss_cog_ekonomi","name":"Ekonomik Coğrafya","priority":5}]},{"id":"kpss_vatandaslik","name":"Vatandaşlık","topics":[{"id":"kpss_vat_hukuk","name":"Hukukun Temel Kavramları","priority":4},{"id":"kpss_vat_anayasa","name":"Anayasa Hukuku","priority":5},{"id":"kpss_vat_yasama","name":"Yasama","priority":4},{"id":"kpss_vat_yurutme","name":"Yürütme","priority":4},{"id":"kpss_vat_yargi","name":"Yargı","priority":4}]},{"id":"kpss_guncel","name":"Güncel Bilgiler","topics":[{"id":"kpss_guncel_turkiye","name":"Türkiye ve Dünya Gündemi","priority":3},{"id":"kpss_guncel_kultur","name":"Kültür, Sanat ve Bilim","priority":3}]}]}]}]}]
+[
+  {
+    "id":"yks","name":"Yükseköğretim Kurumları Sınavı","shortName":"YKS",
+    "sessions":[
+      {"id":"tyt","name":"TYT","subjects":[
+        {"id":"tyt_turkce","name":"Türkçe","topics":[
+          {"id":"tyt_turkce_sozcuk","name":"Sözcükte Anlam","priority":5},{"id":"tyt_turkce_cumle","name":"Cümlede Anlam","priority":5},{"id":"tyt_turkce_paragraf","name":"Paragraf","priority":5},{"id":"tyt_turkce_ses","name":"Ses Bilgisi","priority":3},{"id":"tyt_turkce_yazim","name":"Yazım Kuralları","priority":4},{"id":"tyt_turkce_noktalama","name":"Noktalama İşaretleri","priority":4},{"id":"tyt_turkce_sozcuk_tur","name":"Sözcük Türleri","priority":4},{"id":"tyt_turkce_fiil","name":"Fiiller","priority":4},{"id":"tyt_turkce_cumle_yapi","name":"Cümlenin Ögeleri ve Yapısı","priority":4},{"id":"tyt_turkce_anlatim","name":"Anlatım Bozuklukları","priority":3}
+        ]},
+        {"id":"tyt_matematik","name":"Matematik","topics":[
+          {"id":"tyt_mat_temel","name":"Temel Kavramlar","priority":5},{"id":"tyt_mat_sayilar","name":"Sayı Basamakları ve Sayılar","priority":5},{"id":"tyt_mat_bolme","name":"Bölme-Bölünebilme","priority":4},{"id":"tyt_mat_obeb","name":"EBOB-EKOK","priority":4},{"id":"tyt_mat_rasyonel","name":"Rasyonel Sayılar","priority":5},{"id":"tyt_mat_esitsizlik","name":"Basit Eşitsizlikler","priority":4},{"id":"tyt_mat_mutlak","name":"Mutlak Değer","priority":4},{"id":"tyt_mat_uslu","name":"Üslü Sayılar","priority":5},{"id":"tyt_mat_koklu","name":"Köklü Sayılar","priority":5},{"id":"tyt_mat_carpan","name":"Çarpanlara Ayırma","priority":4},{"id":"tyt_mat_oran","name":"Oran-Orantı","priority":5},{"id":"tyt_mat_denklem","name":"Denklem Çözme","priority":5},{"id":"tyt_mat_problem","name":"Problemler","priority":5},{"id":"tyt_mat_kume","name":"Kümeler ve Kartezyen Çarpım","priority":3},{"id":"tyt_mat_mantik","name":"Mantık","priority":3},{"id":"tyt_mat_fonksiyon","name":"Fonksiyonlar","priority":4},{"id":"tyt_mat_perm","name":"Permütasyon-Kombinasyon-Olasılık","priority":4},{"id":"tyt_mat_veri","name":"Veri ve İstatistik","priority":3}
+        ]},
+        {"id":"tyt_geometri","name":"Geometri","topics":[
+          {"id":"tyt_geo_dogru","name":"Doğruda ve Üçgende Açılar","priority":5},{"id":"tyt_geo_ucgen","name":"Üçgenler","priority":5},{"id":"tyt_geo_cokgen","name":"Çokgenler","priority":4},{"id":"tyt_geo_dortgen","name":"Dörtgenler","priority":4},{"id":"tyt_geo_cember","name":"Çember ve Daire","priority":4},{"id":"tyt_geo_analitik","name":"Analitik Geometri","priority":4},{"id":"tyt_geo_kati","name":"Katı Cisimler","priority":3}
+        ]},
+        {"id":"tyt_tarih","name":"Tarih","topics":[
+          {"id":"tyt_tar_ilk","name":"Tarih Bilimi ve İlk Uygarlıklar","priority":4},{"id":"tyt_tar_turk","name":"İlk Türk Devletleri","priority":4},{"id":"tyt_tar_islam","name":"İslam Tarihi ve Türk-İslam Devletleri","priority":4},{"id":"tyt_tar_osmanli","name":"Osmanlı Devleti","priority":5},{"id":"tyt_tar_inkilap","name":"Kurtuluş Savaşı ve Atatürk İlkeleri","priority":5},{"id":"tyt_tar_cagdas","name":"Çağdaş Türk ve Dünya Tarihi","priority":3}
+        ]},
+        {"id":"tyt_cografya","name":"Coğrafya","topics":[
+          {"id":"tyt_cog_harita","name":"Harita Bilgisi","priority":4},{"id":"tyt_cog_iklim","name":"İklim Bilgisi","priority":5},{"id":"tyt_cog_yer","name":"Yer Şekilleri","priority":4},{"id":"tyt_cog_nufus","name":"Nüfus ve Yerleşme","priority":4},{"id":"tyt_cog_turkiye","name":"Türkiye'nin Coğrafi Özellikleri","priority":5},{"id":"tyt_cog_ekonomi","name":"Ekonomik Faaliyetler","priority":4}
+        ]},
+        {"id":"tyt_felsefe","name":"Felsefe","topics":[
+          {"id":"tyt_fel_giris","name":"Felsefeye Giriş","priority":3},{"id":"tyt_fel_bilgi","name":"Bilgi Felsefesi","priority":3},{"id":"tyt_fel_varlik","name":"Varlık Felsefesi","priority":3},{"id":"tyt_fel_ahlak","name":"Ahlak Felsefesi","priority":3},{"id":"tyt_fel_siyaset","name":"Siyaset ve Din Felsefesi","priority":2}
+        ]},
+        {"id":"tyt_fizik","name":"Fizik","topics":[
+          {"id":"tyt_fiz_madde","name":"Madde ve Özellikleri","priority":4},{"id":"tyt_fiz_hareket","name":"Hareket ve Kuvvet","priority":5},{"id":"tyt_fiz_enerji","name":"İş, Güç ve Enerji","priority":5},{"id":"tyt_fiz_isil","name":"Isı, Sıcaklık ve Genleşme","priority":4},{"id":"tyt_fiz_elektrik","name":"Elektrik ve Manyetizma","priority":5},{"id":"tyt_fiz_optik","name":"Optik","priority":4},{"id":"tyt_fiz_dalga","name":"Dalgalar","priority":4}
+        ]},
+        {"id":"tyt_kimya","name":"Kimya","topics":[
+          {"id":"tyt_kim_bilim","name":"Kimya Bilimi","priority":3},{"id":"tyt_kim_atom","name":"Atom ve Periyodik Sistem","priority":5},{"id":"tyt_kim_turler","name":"Kimyasal Türler Arası Etkileşimler","priority":4},{"id":"tyt_kim_madde","name":"Maddenin Halleri","priority":4},{"id":"tyt_kim_karisim","name":"Karışımlar","priority":4},{"id":"tyt_kim_asit","name":"Asit, Baz ve Tuz","priority":4},{"id":"tyt_kim_hayat","name":"Kimya Her Yerde","priority":3}
+        ]},
+        {"id":"tyt_biyoloji","name":"Biyoloji","topics":[
+          {"id":"tyt_bio_canli","name":"Canlıların Ortak Özellikleri","priority":4},{"id":"tyt_bio_hucre","name":"Hücre","priority":5},{"id":"tyt_bio_sinif","name":"Canlıların Sınıflandırılması","priority":4},{"id":"tyt_bio_bolunme","name":"Hücre Bölünmeleri","priority":5},{"id":"tyt_bio_kalitim","name":"Kalıtım","priority":5},{"id":"tyt_bio_ekoloji","name":"Ekosistem Ekolojisi","priority":4}
+        ]}
+      ]},
+      {"id":"ayt","name":"AYT","subjects":[
+        {"id":"ayt_matematik","name":"Matematik","topics":[
+          {"id":"ayt_mat_fonksiyon","name":"Fonksiyonlar","priority":5},{"id":"ayt_mat_pol","name":"Polinomlar","priority":4},{"id":"ayt_mat_2derece","name":"İkinci Dereceden Denklemler","priority":4},{"id":"ayt_mat_parabol","name":"Parabol","priority":4},{"id":"ayt_mat_trig","name":"Trigonometri","priority":5},{"id":"ayt_mat_log","name":"Logaritma","priority":5},{"id":"ayt_mat_dizi","name":"Diziler","priority":4},{"id":"ayt_mat_limit","name":"Limit ve Süreklilik","priority":5},{"id":"ayt_mat_turev","name":"Türev","priority":5},{"id":"ayt_mat_integral","name":"İntegral","priority":5}
+        ]},
+        {"id":"ayt_fizik","name":"Fizik","topics":[
+          {"id":"ayt_fiz_vektor","name":"Vektörler","priority":4},{"id":"ayt_fiz_hareket","name":"Kuvvet ve Hareket","priority":5},{"id":"ayt_fiz_enerji","name":"Enerji ve Momentum","priority":5},{"id":"ayt_fiz_elektrik","name":"Elektrik ve Manyetizma","priority":5},{"id":"ayt_fiz_dalga","name":"Dalga Mekaniği","priority":4},{"id":"ayt_fiz_modern","name":"Modern Fizik","priority":5}
+        ]},
+        {"id":"ayt_kimya","name":"Kimya","topics":[
+          {"id":"ayt_kim_modern","name":"Modern Atom Teorisi","priority":4},{"id":"ayt_kim_gaz","name":"Gazlar","priority":4},{"id":"ayt_kim_cozelti","name":"Sıvı Çözeltiler","priority":4},{"id":"ayt_kim_enerji","name":"Kimyasal Tepkimelerde Enerji","priority":4},{"id":"ayt_kim_hiz","name":"Tepkime Hızı","priority":5},{"id":"ayt_kim_denge","name":"Kimyasal Denge","priority":5},{"id":"ayt_kim_organik","name":"Organik Kimya","priority":5}
+        ]},
+        {"id":"ayt_biyoloji","name":"Biyoloji","topics":[
+          {"id":"ayt_bio_sinir","name":"Sinir ve Endokrin Sistem","priority":5},{"id":"ayt_bio_duyu","name":"Duyu Organları","priority":4},{"id":"ayt_bio_destek","name":"Destek ve Hareket Sistemi","priority":4},{"id":"ayt_bio_sindirim","name":"Sindirim, Dolaşım ve Solunum","priority":5},{"id":"ayt_bio_ureme","name":"Üreme ve Gelişme","priority":4},{"id":"ayt_bio_genetik","name":"Genden Proteine","priority":5},{"id":"ayt_bio_bitki","name":"Bitki Biyolojisi","priority":4},{"id":"ayt_bio_ekoloji","name":"Komünite ve Popülasyon Ekolojisi","priority":4}
+        ]},
+        {"id":"ayt_edebiyat","name":"Türk Dili ve Edebiyatı","topics":[
+          {"id":"ayt_edeb_soz","name":"Şiir Bilgisi ve Söz Sanatları","priority":4},{"id":"ayt_edeb_islam","name":"İslamiyet Öncesi ve Geçiş Dönemi","priority":3},{"id":"ayt_edeb_divan","name":"Divan Edebiyatı","priority":5},{"id":"ayt_edeb_halk","name":"Halk Edebiyatı","priority":4},{"id":"ayt_edeb_tanzimat","name":"Tanzimat Edebiyatı","priority":5},{"id":"ayt_edeb_servet","name":"Servetifünun ve Fecr-i Ati","priority":4},{"id":"ayt_edeb_milli","name":"Milli Edebiyat","priority":5},{"id":"ayt_edeb_cumhuriyet","name":"Cumhuriyet Dönemi Edebiyatı","priority":5}
+        ]},
+        {"id":"ayt_tarih","name":"Tarih","topics":[
+          {"id":"ayt_tar_turk","name":"Türklerde Devlet ve Toplum","priority":4},{"id":"ayt_tar_osmanli","name":"Osmanlı Siyasi ve Kültürel Tarihi","priority":5},{"id":"ayt_tar_19yy","name":"19. Yüzyılda Osmanlı","priority":4},{"id":"ayt_tar_20yy","name":"20. Yüzyıl Başlarında Osmanlı ve Dünya","priority":4},{"id":"ayt_tar_inkilap","name":"Milli Mücadele ve İnkılaplar","priority":5}
+        ]},
+        {"id":"ayt_cografya","name":"Coğrafya","topics":[
+          {"id":"ayt_cog_dogal","name":"Doğal Sistemler","priority":4},{"id":"ayt_cog_beseri","name":"Beşeri Sistemler","priority":5},{"id":"ayt_cog_ekonomi","name":"Ekonomik Faaliyetler","priority":5},{"id":"ayt_cog_cevre","name":"Çevre ve Toplum","priority":4},{"id":"ayt_cog_bolgeler","name":"Bölgeler ve Ülkeler","priority":4}
+        ]}
+      ]},
+      {"id":"ydt","name":"YDT","subjects":[
+        {"id":"ydt_dil","name":"Yabancı Dil","topics":[
+          {"id":"ydt_vocab","name":"Kelime Bilgisi","priority":5},{"id":"ydt_grammar","name":"Dilbilgisi","priority":5},{"id":"ydt_cloze","name":"Cloze Test","priority":4},{"id":"ydt_sentence","name":"Cümle Tamamlama","priority":4},{"id":"ydt_translation","name":"Çeviri","priority":4},{"id":"ydt_paragraph","name":"Paragraf ve Okuma","priority":5},{"id":"ydt_dialogue","name":"Diyalog ve Anlam Bütünlüğü","priority":4}
+        ]}
+      ]}
+    ]
+  },
+  {
+    "id":"kpss_lisans","name":"KPSS Lisans","shortName":"KPSS Lisans",
+    "sessions":[
+      {"id":"kpss_gygk","name":"Genel Yetenek - Genel Kültür","subjects":[
+        {"id":"kpss_turkce","name":"Türkçe","topics":[
+          {"id":"kpss_tr_sozcuk","name":"Sözcükte Anlam","priority":5},{"id":"kpss_tr_cumle","name":"Cümlede Anlam","priority":5},{"id":"kpss_tr_paragraf","name":"Paragraf","priority":5},{"id":"kpss_tr_dilbilgisi","name":"Dil Bilgisi","priority":4},{"id":"kpss_tr_yazim","name":"Yazım Kuralları","priority":4},{"id":"kpss_tr_noktalama","name":"Noktalama İşaretleri","priority":4},{"id":"kpss_tr_anlatim","name":"Anlatım Bozuklukları","priority":3},{"id":"kpss_tr_sozel","name":"Sözel Mantık","priority":5}
+        ]},
+        {"id":"kpss_matematik","name":"Matematik","topics":[
+          {"id":"kpss_mat_temel","name":"Temel Kavramlar","priority":5},{"id":"kpss_mat_sayilar","name":"Sayılar","priority":5},{"id":"kpss_mat_bolme","name":"Bölme ve Bölünebilme","priority":4},{"id":"kpss_mat_obeb","name":"EBOB-EKOK","priority":4},{"id":"kpss_mat_rasyonel","name":"Rasyonel Sayılar","priority":4},{"id":"kpss_mat_uslu","name":"Üslü ve Köklü Sayılar","priority":5},{"id":"kpss_mat_oran","name":"Oran-Orantı","priority":5},{"id":"kpss_mat_denklem","name":"Denklemler","priority":4},{"id":"kpss_mat_problem","name":"Problemler","priority":5},{"id":"kpss_mat_kume","name":"Kümeler","priority":3},{"id":"kpss_mat_olasilik","name":"Olasılık","priority":3},{"id":"kpss_mat_sayisal","name":"Sayısal Mantık","priority":5},{"id":"kpss_mat_geometri","name":"Temel Geometri","priority":4}
+        ]},
+        {"id":"kpss_tarih","name":"Tarih","topics":[
+          {"id":"kpss_tar_islamoncesi","name":"İslamiyet Öncesi Türk Tarihi","priority":4},{"id":"kpss_tar_turkislam","name":"Türk-İslam Tarihi","priority":4},{"id":"kpss_tar_osmanli_siyasi","name":"Osmanlı Siyasi Tarihi","priority":5},{"id":"kpss_tar_osmanli_kultur","name":"Osmanlı Kültür ve Medeniyeti","priority":5},{"id":"kpss_tar_19yy","name":"19. Yüzyılda Osmanlı","priority":4},{"id":"kpss_tar_kurtulus","name":"Kurtuluş Savaşı","priority":5},{"id":"kpss_tar_inkilap","name":"Atatürk İlke ve İnkılapları","priority":5},{"id":"kpss_tar_cagdas","name":"Çağdaş Türk ve Dünya Tarihi","priority":4}
+        ]},
+        {"id":"kpss_cografya","name":"Coğrafya","topics":[
+          {"id":"kpss_cog_konum","name":"Türkiye'nin Coğrafi Konumu","priority":5},{"id":"kpss_cog_yersekli","name":"Türkiye'nin Yer Şekilleri","priority":5},{"id":"kpss_cog_iklim","name":"Türkiye'de İklim ve Bitki Örtüsü","priority":5},{"id":"kpss_cog_nufus","name":"Nüfus ve Yerleşme","priority":4},{"id":"kpss_cog_tarim","name":"Tarım ve Hayvancılık","priority":4},{"id":"kpss_cog_maden","name":"Madenler ve Enerji Kaynakları","priority":4},{"id":"kpss_cog_sanayi","name":"Sanayi, Ulaşım ve Ticaret","priority":4},{"id":"kpss_cog_bolge","name":"Bölgeler Coğrafyası","priority":3}
+        ]},
+        {"id":"kpss_vatandaslik","name":"Vatandaşlık","topics":[
+          {"id":"kpss_vat_hukuk","name":"Hukukun Temel Kavramları","priority":4},{"id":"kpss_vat_anayasa","name":"Anayasa Hukuku","priority":5},{"id":"kpss_vat_yasama","name":"Yasama","priority":5},{"id":"kpss_vat_yurutme","name":"Yürütme","priority":5},{"id":"kpss_vat_yargi","name":"Yargı","priority":5},{"id":"kpss_vat_idare","name":"İdare Hukuku","priority":4}
+        ]},
+        {"id":"kpss_guncel","name":"Güncel Bilgiler","topics":[
+          {"id":"kpss_guncel_turkiye","name":"Türkiye Gündemi","priority":3},{"id":"kpss_guncel_dunya","name":"Dünya Gündemi","priority":3},{"id":"kpss_guncel_kultur","name":"Kültür, Sanat ve Bilim","priority":3}
+        ]}
+      ]}
+    ]
+  },
+  {
+    "id":"kpss_onlisans","name":"KPSS Ön Lisans","shortName":"KPSS Ön Lisans",
+    "sessions":[{"id":"kpss_onlisans_gygk","name":"Genel Yetenek - Genel Kültür","subjects":[
+      {"id":"kpo_turkce","name":"Türkçe","topics":[{"id":"kpo_tr_anlam","name":"Sözcük, Cümle ve Paragraf Anlamı","priority":5},{"id":"kpo_tr_dil","name":"Dil Bilgisi","priority":4},{"id":"kpo_tr_sozel","name":"Sözel Mantık","priority":5}]},
+      {"id":"kpo_mat","name":"Matematik","topics":[{"id":"kpo_mat_temel","name":"Temel Matematik","priority":5},{"id":"kpo_mat_problem","name":"Problemler","priority":5},{"id":"kpo_mat_sayisal","name":"Sayısal Mantık","priority":5},{"id":"kpo_mat_geo","name":"Geometri","priority":4}]},
+      {"id":"kpo_tarih","name":"Tarih","topics":[{"id":"kpo_tar_osmanli","name":"Osmanlı Tarihi","priority":5},{"id":"kpo_tar_inkilap","name":"Milli Mücadele ve İnkılap Tarihi","priority":5}]},
+      {"id":"kpo_cog","name":"Coğrafya","topics":[{"id":"kpo_cog_turkiye","name":"Türkiye Coğrafyası","priority":5}]},
+      {"id":"kpo_vat","name":"Vatandaşlık","topics":[{"id":"kpo_vat_anayasa","name":"Anayasa ve Devlet Organları","priority":5}]}
+    ]}]
+  },
+  {
+    "id":"kpss_ortaogretim","name":"KPSS Ortaöğretim","shortName":"KPSS Ortaöğretim",
+    "sessions":[{"id":"kpss_orta_gygk","name":"Genel Yetenek - Genel Kültür","subjects":[
+      {"id":"kpoo_turkce","name":"Türkçe","topics":[{"id":"kpoo_tr_anlam","name":"Anlam Bilgisi ve Paragraf","priority":5},{"id":"kpoo_tr_dil","name":"Dil Bilgisi","priority":4},{"id":"kpoo_tr_mantik","name":"Sözel Mantık","priority":5}]},
+      {"id":"kpoo_mat","name":"Matematik","topics":[{"id":"kpoo_mat_temel","name":"Temel Matematik","priority":5},{"id":"kpoo_mat_problem","name":"Problemler","priority":5},{"id":"kpoo_mat_mantik","name":"Sayısal Mantık","priority":5}]},
+      {"id":"kpoo_tarih","name":"Tarih","topics":[{"id":"kpoo_tar_turk","name":"Türk ve Osmanlı Tarihi","priority":4},{"id":"kpoo_tar_inkilap","name":"İnkılap Tarihi","priority":5}]},
+      {"id":"kpoo_cog","name":"Coğrafya","topics":[{"id":"kpoo_cog_turkiye","name":"Türkiye Coğrafyası","priority":5}]},
+      {"id":"kpoo_vat","name":"Vatandaşlık","topics":[{"id":"kpoo_vat_anayasa","name":"Temel Hukuk ve Anayasa","priority":5}]}
+    ]}]
+  }
+]
