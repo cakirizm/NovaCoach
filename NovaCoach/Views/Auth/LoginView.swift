@@ -59,4 +59,4 @@ struct LoginView: View {
     }
 }
 
-enum AuthMode { case login, register }
+enum AuthMode: Hashable { case login, register }
