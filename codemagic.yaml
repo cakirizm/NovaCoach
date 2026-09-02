@@ -1,4 +1,25 @@
 workflows:
+  ios-qa:
+    name: NovaCoach iOS QA
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        XCODE_PROJECT: "NovaCoach.xcodeproj"
+        XCODE_SCHEME: "NovaCoach"
+      xcode: latest
+    scripts:
+      - name: Install XcodeGen
+        script: brew install xcodegen || brew upgrade xcodegen || true
+      - name: Generate Xcode project
+        script: xcodegen generate
+      - name: Validate project
+        script: xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -showBuildSettings > /tmp/build-settings.txt
+      - name: Build simulator QA gate
+        script: xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO clean build
+    artifacts:
+      - ~/Library/Developer/Xcode/DerivedData/**/Build/Products/Debug-iphonesimulator/*.app
+
   ios-release:
     name: NovaCoach iOS Release
     max_build_duration: 60
@@ -7,22 +28,13 @@ workflows:
       vars:
         XCODE_PROJECT: "NovaCoach.xcodeproj"
         XCODE_SCHEME: "NovaCoach"
-        BUNDLE_ID: "com.novacoach.app"
       xcode: latest
-      cocoapods: default
     scripts:
       - name: Install XcodeGen
-        script: |
-          brew install xcodegen || true
+        script: brew install xcodegen || brew upgrade xcodegen || true
       - name: Generate Xcode project
-        script: |
-          xcodegen generate
-      - name: Build simulator (QA gate)
-        script: |
-          xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
+        script: xcodegen generate
       - name: Archive
-        script: |
-          xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -configuration Release -archivePath build/NovaCoach.xcarchive archive
+        script: xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -configuration Release -archivePath build/NovaCoach.xcarchive archive
     artifacts:
-      - build/**/*.xcarchive
-      - ~/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - build/NovaCoach.xcarchive
