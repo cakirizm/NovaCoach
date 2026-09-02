@@ -1,0 +1,28 @@
+workflows:
+  ios-release:
+    name: NovaCoach iOS Release
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        XCODE_PROJECT: "NovaCoach.xcodeproj"
+        XCODE_SCHEME: "NovaCoach"
+        BUNDLE_ID: "com.novacoach.app"
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Install XcodeGen
+        script: |
+          brew install xcodegen || true
+      - name: Generate Xcode project
+        script: |
+          xcodegen generate
+      - name: Build simulator (QA gate)
+        script: |
+          xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
+      - name: Archive
+        script: |
+          xcodebuild -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -configuration Release -archivePath build/NovaCoach.xcarchive archive
+    artifacts:
+      - build/**/*.xcarchive
+      - ~/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
