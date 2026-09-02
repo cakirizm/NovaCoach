@@ -1,39 +1,28 @@
-# NovaCoach — Faz 1
+# NovaCoach — iOS Faz 2
 
-Bu paket Codemagic/Xcode için hazırlanmış SwiftUI iOS uygulamasının ilk çalışan fazıdır.
+NovaCoach, soru çözdürmek yerine öğrencinin çalışma sürecini yöneten SwiftUI tabanlı dijital sınav koçudur.
 
-## Faz 1 tamamlananlar
-- Çalışan giriş ve kayıt akışı (şimdilik local persistence)
-- Tam tıklanabilir onboarding
-- YKS ve KPSS Lisans master exam verisi
-- Sınav > oturum > ders > konu ağacı
-- Hedef, tempo ve koç tarzı seçimi
-- Otomatik ilk plan üretimi
-- Ana sayfa görevleri ve tamamlanma aksiyonu
-- Konu durumları: Başlanmadı / Çalışılıyor / Tekrar Gerekli / Oturdu
-- Ders ve genel ilerleme hesapları
-- Koç mesajı ve planı yeniden oluşturma
-- Profil ve abonelik taslağı
-- UserDefaults ile local kalıcılık
-- Codemagic için project.yml ve codemagic.yaml
+## Faz 2 kapsamı
+- Gerçek çalışan kayıt / giriş / çıkış / şifre yenileme akışı
+- Hesap bilgilerini iOS Keychain'de SHA-256 + salt ile saklama
+- Kullanıcı bazlı ilerleme ve plan kalıcılığı
+- YKS, KPSS Lisans, KPSS Ön Lisans, KPSS Ortaöğretim master data başlangıcı
+- Sınav > oturum > ders > konu navigasyonu
+- Konu durumu + zorluk seçimi
+- Dinamik plan motoru
+- Zorluğa göre tekrar tarihleri
+- Günlük görev tamamlama ve ilerlemeye gerçek yansıma
+- Dijital koçun kullanıcı girdisine göre plan temposunu değiştirmesi
+- Haftalık analiz
+- Profil, sınav değiştirme, hedef, tempo, koç stili ve sınav tarihi
+- Premium ekranı (sahte satın alma yok; StoreKit ürünleri bağlanmayı bekliyor)
+- Codemagic iOS simulator QA gate + archive workflow
 
-## Mimari
-UI: SwiftUI
-State: AppStore (ObservableObject)
-Master Data: bundled versioned JSON
-Persistence Faz 1: UserDefaults JSON
-Faz 2 backend abstraction: AuthRepository / UserProgressRepository / ExamCalendarRepository
-Abonelik: StoreKit 2 (Faz 2)
-Admin: web panel + exam calendar endpoint (Faz 2)
+## Önemli
+Bu fazdaki hesap sistemi gerçek ve cihaz üzerinde çalışır; kullanıcı kayıt olur, çıkış yapar ve aynı bilgilerle tekrar giriş yapabilir. Henüz cloud backend olmadığı için hesap/ilerleme farklı cihazlar arasında senkronize olmaz. Backend bağlandığında CredentialStore ve persistence katmanı cloud servise taşınacaktır.
 
-## Veri ayrımı
-1. Master data (bizim yönettiğimiz): sınav, oturum, ders, konu, alt konu, öncelik.
-2. Güncel data (admin): sınav tarihi, başvuru/sonuç tarihi, duyuru.
-3. Kullanıcı data: ilerleme, konu durumu, koç davranışı, plan geçmişi.
+## Build
+Codemagic `xcodegen generate` ile `NovaCoach.xcodeproj` üretir. Bundle ID: `com.novacoach.app`.
 
-## Codemagic
-Repository'ye bu klasörü yükle. `codemagic.yaml` XcodeGen kurup `.xcodeproj` üretir.
-Signing için Codemagic App Store Connect integration + bundle id `com.novacoach.app` eşleştirilmelidir.
-
-## Not
-`exams.json` Faz 1 kapsamıdır. YKS/KPSS konu listeleri ürün master datasının başlangıcıdır; yayın öncesi resmi kılavuz/MEB kapsamıyla sürüm bazlı audit edilmelidir. ÖSYM soru içerikleri uygulamaya dahil edilmez.
+## Veri yaklaşımı
+Master konu taksonomisi ürün verisidir ve sürümlenir. Sınav/başvuru/sonuç tarihleri admin tarafından yönetilecek ayrı güncel veri katmanına taşınacaktır. Yayın öncesi her sınav yılı için kapsam audit'i yapılmalıdır.
