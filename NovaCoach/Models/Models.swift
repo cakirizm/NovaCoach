@@ -1,6 +1,6 @@
 import Foundation
 
-enum UserRole: String, Codable, CaseIterable, Identifiable {
+enum UserRole: String, Codable, CaseIterable, Identifiable, Hashable {
     case student = "Öğrenci"
     var id: String { rawValue }
 }
@@ -30,7 +30,7 @@ struct Topic: Codable, Identifiable, Hashable {
     let priority: Int
 }
 
-enum TopicState: String, Codable, CaseIterable, Identifiable {
+enum TopicState: String, Codable, CaseIterable, Identifiable, Hashable {
     case notStarted = "Başlanmadı"
     case studying = "Çalışılıyor"
     case review = "Tekrar Gerekli"
@@ -38,7 +38,7 @@ enum TopicState: String, Codable, CaseIterable, Identifiable {
     var id: String { rawValue }
 }
 
-enum TopicDifficulty: Int, Codable, CaseIterable, Identifiable {
+enum TopicDifficulty: Int, Codable, CaseIterable, Identifiable, Hashable {
     case easy = 1, normal = 2, hard = 3
     var id: Int { rawValue }
     var label: String { self == .easy ? "Kolay" : self == .normal ? "Normal" : "Zor" }
@@ -53,7 +53,7 @@ struct TopicProgress: Codable, Identifiable {
     var nextReviewAt: Date?
 }
 
-enum StudyTaskKind: String, Codable {
+enum StudyTaskKind: String, Codable, Hashable {
     case study = "Konu"
     case review = "Tekrar"
 }
