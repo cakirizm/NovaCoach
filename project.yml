@@ -1,6 +1,6 @@
 name: NovaCoach
 options:
-  bundleIdPrefix: com.novacoach
+  bundleIdPrefix: com.cakirizm
 settings:
   base:
     IPHONEOS_DEPLOYMENT_TARGET: 17.0
@@ -16,7 +16,7 @@ targets:
       - path: NovaCoach/Resources
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.novacoach.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.cakirizm.novacoach
         PRODUCT_NAME: NovaCoach
         CODE_SIGN_STYLE: Automatic
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
